@@ -328,3 +328,50 @@ footer a:hover {
         align-items: flex-start;
     }
 }
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    display: block;
+    opacity: 1;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff9900;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation for Hero section */
+.hero.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    100% {
+        opacity: 1;
+    }
+}
