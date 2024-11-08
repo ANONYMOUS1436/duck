@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #1a1a1a; /* Dark background color */
-    color: #fff; /* White text for contrast */
+    background-color: #1a1a1a;
+    color: #fff; 
     line-height: 1.6;
     font-size: 16px;
 }
@@ -167,7 +167,7 @@ nav .nav-toggle {
 .card h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    color: ##ef9c20; /* Orange text for titles */
+    color: #ef9c20; /* Orange text for titles */
 }
 
 .card p {
@@ -197,7 +197,7 @@ nav .nav-toggle {
     font-size: 2.5rem;
     margin-bottom: 30px;
     font-weight: bold;
-    color: #ef9c20;
+    color: #ffffff;
 }
 
 .resources ul {
