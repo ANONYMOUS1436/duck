@@ -92,6 +92,10 @@ nav .nav-toggle {
     max-width: 800px;
     margin: 0 auto;
 }
+.hero-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 .hero h1 {
     font-size: 3rem;
@@ -132,7 +136,7 @@ nav .nav-toggle {
 }
 /* Featured Topics Section */
 .topics {
-    background-color: #333; 
+    background-color: #000000; 
     padding: 50px 2rem;
     text-align: center;
 }
@@ -187,7 +191,7 @@ nav .nav-toggle {
 
 /* Resources Section */
 .resources {
-    background-color: #333;
+    background-color: #000000;
     padding: 50px 2rem;
 }
 
@@ -219,6 +223,7 @@ nav .nav-toggle {
 }
 
 .resources a:hover {
+    transform: translate(-10px);
     color: #ff9900;
 }
 
