@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ a {
 
 h1, h2, h3 {
     font-family: 'Helvetica Neue', sans-serif;
-    color: #fff; /* Ensure headers are visible on dark background */
+    color: #fff; 
 }
 
 /* Navigation Bar */
@@ -29,7 +29,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000000; /* Bright orange background */
+    background-color: #000000; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -75,12 +75,12 @@ nav .nav-toggle {
 }
 
 #nav-list a:hover {
-    color: #ffcc00; /* Light yellow for hover effect */
+    color: #ffcc00; 
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, #1a1a1a, #ff3300); /* Orange gradient */
+    background: linear-gradient(to bottom right, #1a1a1a, #ff3300); 
     color: white;
     padding: 100px 2rem;
     text-align: center;
@@ -105,7 +105,7 @@ nav .nav-toggle {
 }
 
 .cta-button {
-    background-color: #ffcc00; /* Light yellow-orange */
+    background-color: #ffcc00; 
     color: #333;
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -115,7 +115,7 @@ nav .nav-toggle {
 }
 
 .cta-button:hover {
-    background-color: #ff9900; /* Darker orange on hover */
+    background-color: #ff9900; 
 }
 
 .hero::after {
@@ -130,10 +130,9 @@ nav .nav-toggle {
     border-radius: 50%;
     z-index: -1;
 }
-
 /* Featured Topics Section */
 .topics {
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333; 
     padding: 50px 2rem;
     text-align: center;
 }
@@ -142,7 +141,7 @@ nav .nav-toggle {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
-    color: #ffffff; /* Orange for section title */
+    color: #ffffff; 
 }
 
 .topic-cards {
@@ -152,7 +151,7 @@ nav .nav-toggle {
 }
 
 .card {
-    background-color: #444; /* Slightly lighter dark gray for cards */
+    background-color: #444; 
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -167,23 +166,23 @@ nav .nav-toggle {
 .card h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    color: #ef9c20; /* Orange text for titles */
+    color: #ef9c20; 
 }
 
 .card p {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: #ccc; /* Light gray for description text */
+    color: #ccc; 
 }
 
 .card a {
-    color: #ffcc00; /* Light yellow-orange links */
+    color: #ffcc00; 
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .card a:hover {
-    color: #ff9900; /* Darker orange on hover */
+    color: #ff9900; 
 }
 
 /* Resources Section */
@@ -225,7 +224,7 @@ nav .nav-toggle {
 
 /* Contact Section */
 .contact {
-    background-color: #ef9c20; /* Orange background */
+    background-color: #ef9c20; 
     color: white;
     padding: 60px 2rem;
     text-align: center;
@@ -243,7 +242,7 @@ nav .nav-toggle {
 }
 
 .contact .cta-button {
-    background-color: #ffcc00; /* Light yellow-orange */
+    background-color: #ffcc00; 
     color: #333;
     padding: 12px 25px;
     font-size: 1.1rem;
@@ -258,7 +257,7 @@ nav .nav-toggle {
 
 /* Footer */
 footer {
-    background-color: #000000; /* Dark footer */
+    background-color: #000000; 
     color: white;
     padding: 20px;
     text-align: center;

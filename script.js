@@ -1,6 +1,3 @@
-// JavaScript for Enhanced Interactivity and Animations
-
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,37 +6,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop - 50, // Adjust for any fixed navbar offset
+            top: targetElement.offsetTop - 50, 
             behavior: 'smooth'
         });
-
-        // Close mobile menu after clicking a link (if in mobile view)
         if (window.innerWidth <= 768) {
             closeMobileMenu();
         }
     });
 });
-
-// Hamburger menu toggle for mobile devices
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('.nav-link');
-
-// Mobile menu toggle
 navToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
-    navToggle.classList.toggle('active'); // Animate the hamburger icon to close
+    navToggle.classList.toggle('active');
 });
-
-// Close menu when clicking outside of the nav
 document.addEventListener('click', (e) => {
     if (!navList.contains(e.target) && !navToggle.contains(e.target)) {
         navList.classList.remove('active');
         navToggle.classList.remove('active');
     }
 });
-
-// Close menu on navigation link click (mobile)
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (navList.classList.contains('active')) {
@@ -47,20 +34,14 @@ navLinks.forEach(link => {
         }
     });
 });
-
-// Close the mobile menu function
 function closeMobileMenu() {
     navList.classList.remove('active');
     navToggle.classList.remove('active');
 }
-
-// Scroll-to-top button
 const scrollToTopButton = document.createElement('button');
 scrollToTopButton.classList.add('scroll-to-top');
-scrollToTopButton.textContent = '↑'; // Scroll icon or text
+scrollToTopButton.textContent = '↑';
 document.body.appendChild(scrollToTopButton);
-
-// Show/Hide scroll-to-top button on scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         scrollToTopButton.classList.add('show');
@@ -68,16 +49,12 @@ window.addEventListener('scroll', () => {
         scrollToTopButton.classList.remove('show');
     }
 });
-
-// Scroll to top when button is clicked
 scrollToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 });
-
-// Card hover effect animation
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     card.addEventListener('mouseover', () => {
@@ -89,14 +66,10 @@ cards.forEach(card => {
         card.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.1)';
     });
 });
-
-// Page Load Animation for Hero Section
 window.addEventListener('load', () => {
     const hero = document.querySelector('.hero');
     hero.classList.add('fade-in');
 });
-
-// Animation for fade-in on load (for Hero Section)
 document.styleSheets[0].insertRule(`
     .fade-in {
         opacity: 0;
