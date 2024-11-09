@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: #fff; 
     line-height: 1.6;
     font-size: 16px;
@@ -29,7 +29,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #1a1a1a; /* Bright orange background */
+    background-color: #000000; /* Bright orange background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -258,7 +258,7 @@ nav .nav-toggle {
 
 /* Footer */
 footer {
-    background-color: #1a1a1a; /* Dark footer */
+    background-color: #000000; /* Dark footer */
     color: white;
     padding: 20px;
     text-align: center;
